@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Lingo</title>
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/general.css"/>
+  <link rel="stylesheet" href="styles/logo.css"/>
+  <link rel="stylesheet" href="styles/play.css"/>
+  <link rel="stylesheet" href="styles/reveal.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+</head>
+
+<body>
+  <main>
+    <div class="logo">
+      <div class="l1">L</div>
+      <div class="l2">I</div>
+      <div class="l1">N</div>
+      <div class="l2">G</div>
+      <div class="l1">O</div>
+      <div id="result-information">Nepodarilo sa Vám nájsť hľadané slovo. Skúste to znova.</div>
+    </div>
+
+    <div class="playground">
+
+      <div class="play">
+        <div class="letters" id="js-11"></div>
+        <div class="letters" id="js-12"></div>
+        <div class="letters" id="js-13"></div>
+        <div class="letters" id="js-14"></div>
+        
+        <div class="letters" id="js-21"></div>
+        <div class="letters" id="js-22"></div>
+        <div class="letters" id="js-23"></div>
+        <div class="letters" id="js-24"></div>
+        
+        <div class="letters" id="js-31"></div>
+        <div class="letters" id="js-32"></div>
+        <div class="letters" id="js-33"></div>
+        <div class="letters" id="js-34"></div>
+        
+        <div class="letters" id="js-41"></div>
+        <div class="letters" id="js-42"></div>
+        <div class="letters" id="js-43"></div>
+        <div class="letters" id="js-44"></div>
+
+        <div class="letters" id="js-51"></div>
+        <div class="letters" id="js-52"></div>
+        <div class="letters" id="js-53"></div>
+        <div class="letters" id="js-54"></div>
+      </div>
+
+      <div class="info">
+        <div class="myround">
+          <div class="info-spacing">Hra číslo:</div>
+          <div class="info-spacing2" id="js-round">0</div>
+        </div>
+        <div class="myscore">
+          <div class="info-spacing">Vyriešené slová:</div>
+          <div class="info-spacing2" id="js-score">0</div>
+         </div>
+        
+        <div class="notes">
+
+          <div class="help">
+            <p>Slová vkladajte bez diakritiky pomocou klávesnice. Keď chcete opraviť písmenko, stlačte BACKSPACE. Zadaním posledného písmenká zároveň potvrdíte slovo, ktoré sa porovná s hľadaným slovom. Veľa šťastia!</p>
+          </div>
+
+          <div class="position">
+            <div class="pos1">
+              <div class="correct-box">
+                <div class="correct-text">X</div>
+              </div>
+            </div>
+            <div class="pos2">správne písmeno na správnom mieste</div>
+          </div>
+
+          <div class="position">
+            <div class="pos1">
+              <div class="wrong-box">
+                <div class="correct-text">X</div>
+              </div>
+            </div>
+            <div class="pos2">správne písmeno na nesprávnom mieste</div>
+          </div>
+        </div>
+
+        <div id="result">
+          <div class="result-text">Toto je hľadané slovo:</div>
+          <div class="reveal">
+            <div class="result-letters" id="js-61"></div>
+            <div class="result-letters" id="js-62"></div>
+            <div class="result-letters" id="js-63"></div>
+            <div class="result-letters" id="js-64"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id='footer'>Ak chcete hrať novú hru, stlačte klávesu SPACE.</div>
+  
+  </main>
+
+  <script src="scripts/words.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
